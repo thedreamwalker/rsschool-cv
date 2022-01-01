@@ -5,9 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV#2. HTML, CSS & Git Basics</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Here will be content</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container main-container">
+            <section class="section-one-block profile" id="profile">
+                <div class="img-wrapper"><img src="./assets/img/365A2967.jpg" alt="photo"></div>
+                
+                <h1 class="first-title"><span class="letter">V</span>eronica Podkolzina</h1>
+            </section>
+            <section class="section-one-block" id="summary">
+                <h2 class="section-title">About me</h2>
+                <p>I work in IT as content manager and basic knowledge about HTML & CSS helps me very much. But I want know more. 
+                I’m going to learn to create complex interesting apps by myself. My dream is develop game one day. 
+                The development opens many paths in different spheres, you always can become better and better. And I like it.</p>
+            </section>
+
+                
+
+            <section class="section-one-block" id="contacts">
+                <h2 class="section-title">You can contact me with:</h2>
+                <ul>
+                    <li>E-mail: vhayami@gmail.com</li>
+                    <li>Telegram: @the_dream_walker</li>
+                    <li>Discord: Veronica (@thedreamwalker)</li>
+                </ul>
+            </section>
+
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>HTML5, CSS3</li>
+                    <li>Basic JavaScript</li>
+                    <li>Git</li>
+                    <li>Use graphics editors like Adobe Photoshop, Figma</li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h2 class="section-title">Code example</h2>
+                <blockquote>Create a function which translates a given DNA string into RNA. For example: “GCAT” => “GCAU” 
+                    The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, 
+                    i.e. each input string will only ever consist of ‘G’, ‘C’, ‘A’ and/or ‘T’.</blockquote>
+                    <pre>
+                        <code>
+                            function DNAtoRNA(dna) {
+                                // create a function which returns an RNA sequence from the given DNA sequence
+                                let resulte = '';
+                                
+                                for (let i = 0; i < dna.length; i += 1) {
+                                  let check = (dna[i] === 'T') ? resulte += 'U' : resulte += dna[i];
+                                }
+                                
+                                return resulte;
+                              }
+                        </code>
+                        
+                    </pre>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title"></h2>
+         
+            </section>
+            <section class="section" id="courses">
+                <h2 class="section-title"></h2>
+                <ul>
+                    <li>HTML Academy (course HTML & CSS Professional Website Coding)</li>
+                    <li>Hexlet</li>
+                    <li>RS School (in progress)</li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Experience</h2>
+                Project HTML Academy Technomart <a href="https://github.com/thedreamwalker/831433-technomart-29">link github</a> // <a href="https://thedreamwalker.github.io/831433-technomart-29/">link preview</a>
+            </section>
+            <section class="section" id="english">
+                <h2 class="section-title">Languages</h2>
+                <p>English level A2, working with a tutor</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
 </body>
 </html>
+
+<!--
+contacts (список контактов)
+summary (рассказ о себе)
+skills (перечень навыков)
+code (пример кода)
+courses (курсы в т.ч онлайн-курсы)
+projects (ссылки на выполненные проекты)
+education (образование)
+english (уровень английского)
+-->
