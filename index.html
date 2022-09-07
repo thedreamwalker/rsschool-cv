@@ -38,7 +38,7 @@
         </section>
         <section class="section-one-block" id="summary">
           <h2 class="section-title">About me</h2>
-          <p>I work in IT as content manager and basic knowledge about HTML &amp; CSS helps me very much. But I want know more. 
+          <p>I work in IT as content manager and basic knowledge about HTML &amp; CSS helps me very much. But I want know more.
           I’m going to learn to create complex interesting apps by myself. My dream is develop game one day. 
           The development opens many paths in different spheres, you always can become better and better. And I like it.</p>
         </section>
@@ -83,19 +83,17 @@
           </section>
           <section class="section-info-block code-block" id="code">
             <h2 class="section-title">Code example</h2>
-            <blockquote>Create a function which translates a given DNA string into RNA. For example: “GCAT” => “GCAU” 
-                The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, 
+            <blockquote>Create a function which translates a given DNA string into RNA. For example: “GCAT” =&gt; “GCAU”
+                The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid,
                 i.e. each input string will only ever consist of ‘G’, ‘C’, ‘A’ and/or ‘T’.</blockquote>
             <pre>
               <code>
             function DNAtoRNA(dna) {
             // create a function which returns an RNA sequence from the given DNA sequence
               let resulte = '';
-                                            
               for (let i = 0; i &lt; dna.length; i += 1) {
                 let check = (dna[i] === 'T') ? resulte += 'U' : resulte += dna[i];
               }
-                                            
               return resulte;
             }
               </code>
